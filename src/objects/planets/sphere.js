@@ -1,10 +1,8 @@
 import * as three from 'three'
 import { scene } from '../scene'
 
-const sphereGeometry = new three.SphereGeometry(1, 32, 32)
+const sphereGeometry = new three.SphereGeometry(1, 100, 100)
 const textureLoader = new three.TextureLoader()
-const directionalLight = new three.DirectionalLight(0xffffff, 1);
-directionalLight.position.set(0, 0, 0);
 
 // sun
 const sunTexture = textureLoader.load('/textures/2k_sun.jpg')
@@ -15,16 +13,12 @@ const sunMaterial = new three.MeshStandardMaterial({
 const sun = new three.Mesh(sphereGeometry, sunMaterial)
 sun.scale.setScalar(5)
 sun.name = 'sun'
+const ambientLight = new three.AmbientLight(0x333333, 50);
+sun.add(ambientLight);
 scene.add(sun)
-
-// Add point light at the center (sun position)
-const sunLight = new three.PointLight(0xffffff, 50, 300, 1);
+const sunLight = new three.PointLight(0xffffff, 100, 300, 1);
 sunLight.position.set(0, 0, 0);
 scene.add(sunLight);
-
-// Optional: Add ambient light for overall illumination
-const ambientLight = new three.AmbientLight(0x333333, 5);
-scene.add(ambientLight);
 
 // mars 
 const marsTexture = textureLoader.load('/textures/2k_mars.jpg')
