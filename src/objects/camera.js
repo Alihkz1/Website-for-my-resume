@@ -5,8 +5,8 @@ const camera = new three.PerspectiveCamera(
     100,
     window.innerWidth / window.innerHeight,
     0.01,
-    100
+    1000
 )
-camera.position.z = 40
+camera.position.z = 30
 
 export { camera }
