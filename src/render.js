@@ -12,8 +12,10 @@ const render = new three.WebGLRenderer(
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true
 // controls.autoRotate = true
+const isMobile = window.innerWidth < 992
+const windowInnerWidth =  isMobile ? window.innerWidth : window.innerWidth / 2
 
-render.setSize(window.innerWidth / 2, window.innerHeight)
+render.setSize(windowInnerWidth, window.innerHeight)
 
 initPlanets()
 
