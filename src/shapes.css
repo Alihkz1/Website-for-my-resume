@@ -1,0 +1,119 @@
+.fellas {
+    position: relative;
+    width: 400px;
+    height: 320px;
+}
+
+.fellas-purple {
+    width: 10rem;
+    height: 20rem;
+    background: rgb(83, 0, 179);
+    position: absolute;
+    left: 4rem;
+    z-index: 0;
+    bottom: 0;
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.fellas-black {
+    width: 7rem;
+    height: 10rem;
+    background: black;
+    position: absolute;
+    right: 4rem;
+    z-index: 2;
+    bottom: 0;
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.fellas-red {
+    width: 5rem;
+    height: 14rem;
+    background: red;
+    position: absolute;
+    right: 8rem;
+    z-index: 1;
+    bottom: 0;
+    border-radius: 20rem 20rem 0 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.fellas-orange {
+    width: 14rem;
+    height: 10rem;
+    background: orange;
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    z-index: 3;
+    border-radius: 20rem 20rem 0 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.eye {
+    margin-top: 2rem;
+    background-color: rgb(210, 242, 255);
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-dot {
+    background-color: black;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    border-left: 1px solid rgb(129, 129, 129);
+}
+
+.info-download {
+    margin-top: 1rem;
+    background-color: orange;
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.5rem;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info-download-image {
+    height: 18px;
+}
+
+.info-download:hover {
+    transform: scale(0.96);
+}
+
+.shapes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

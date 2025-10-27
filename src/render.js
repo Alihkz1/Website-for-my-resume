@@ -13,7 +13,7 @@ const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true
 // controls.autoRotate = true
 
-render.setSize(window.innerWidth, window.innerHeight)
+render.setSize(window.innerWidth / 2, window.innerHeight)
 
 initPlanets()
 

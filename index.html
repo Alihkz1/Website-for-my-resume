@@ -3,14 +3,62 @@
 
 <head>
   <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/shapes.css">
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThreeJs App</title>
+  <title>Ali Hosseinkhani</title>
+  <script src="main.js" defer></script>
 </head>
 
 <body>
-  <canvas class="three"></canvas>
+  <div class="container">
+    <canvas class="three"></canvas>
+    <div class="shapes">
+      <div class="fellas">
+        <div class="fellas-purple">
+          <div class="eye">
+            <div class="eye-dot"></div>
+          </div>
+          <div class="eye">
+            <div class="eye-dot"></div>
+          </div>
+        </div>
+        <div class="fellas-orange">
+          <div class="eye">
+            <div class="eye-dot"></div>
+          </div>
+          <div class="eye">
+            <div class="eye-dot"></div>
+          </div>
+        </div>
+        <div class="fellas-black">
+          <div class="eye">
+            <div class="eye-dot"></div>
+          </div>
+          <div class="eye">
+            <div class="eye-dot"></div>
+          </div>
+        </div>
+        <div class="fellas-red">
+          <div class="eye">
+            <div class="eye-dot"></div>
+          </div>
+          <div class="eye">
+            <div class="eye-dot"></div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <span>Ali Hosseinkhani</span>
+        <span>24 y.o. software Engineer</span>
+        <button class="info-download">
+          <span><b>Download CV</b></span>
+          <img class="info-download-image" src="/download.svg" alt="">
+        </button>
+      </div>
+    </div>
+  </div>
   <script type="module" src="/src/render.js"></script>
 </body>
 
